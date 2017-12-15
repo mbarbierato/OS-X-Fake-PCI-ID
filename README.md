@@ -24,7 +24,7 @@ In all cases, FakePCIID.kext must be installed with a kext installer (such as Ke
 In order to cause the kext to be loaded against a particular device, you must also install the appropriate injector kext.  Currently, four injectors are provided:
 
 - FakePCIID_Intel_HD_Graphics.kext (formerly FakePCIID_HD4600_HD4400.kext): 
-This kext will attach to `8086:0412`, `8086:0416`, `8086:0a1e`, `8086:041e`, `8086:0a16`, `8086:041a`, `8086:016a`, `8086:191d`,  `8086:162a`, `8086:5917`
+This kext will attach to `8086:0412`, `8086:0416`, `8086:0a1e`, `8086:041e`, `8086:0a16`, `8086:041a`, `8086:016a`, `8086:191d`,  `8086:162a`, `8086:5917`, `8086:3e91`, `8086:3e92`
 
   - `8086:0412` is HD4600 desktop (now the only GT2 device supported in Yosemite as of 10.10.2)
   - `8086:0a16` is HD4400 mobile.
@@ -36,6 +36,7 @@ This kext will attach to `8086:0412`, `8086:0416`, `8086:0a1e`, `8086:041e`, `80
   - `8086:191d` is P530 server.
   - `8086:162a` is P6300 server.
   - `8086:5917` is HD620 KabyLake-R.
+  - `8086:3e91` is UHD630 CoffeLake (typical 3e91 with i3 or other low-end CPUs)
   
   For HD4600, normally fake device-id of `8086:0412` will be injected for Yosemite, as Yosemite does not natively recognize `8086:0416`.  `8086:0412` is the native device-id for HD4600 desktop.
   By injecting `0412`, `AppleIntelFramebufferAzul` and `AppleIntelHD5000Graphics` will load.
@@ -45,7 +46,7 @@ This kext will attach to `8086:0412`, `8086:0416`, `8086:0a1e`, `8086:041e`, `80
   For P530 support, inject device-id 1912 (HD530).
   For P6300 support, inject device-id 1622 (HD6200)
   For HD620 KabyLake-R, inject device-id 5916 (HD620)
-
+  For UHD630 CoffeeLake, inject device-id 3e92 (UHD630)
 
 - FakePCIID_Intel_HDMI_Audio.kext:
   This kext will attach to `8086:0c0c` or `8086:9d70` or `8086:a170`

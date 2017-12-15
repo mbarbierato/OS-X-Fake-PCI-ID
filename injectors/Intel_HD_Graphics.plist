@@ -150,7 +150,7 @@
 				<data>FlkAAA==</data>
 			</dict>
 		</dict>
-		<key>UHD630/UHD620 CoffeeLake</key>
+		<key>UHD630 CoffeeLake</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>org.rehabman.driver.FakePCIID</string>
@@ -163,13 +163,13 @@
 			<key>IOPCIClassMatch</key>
 			<string>0x03000000&amp;0xff000000</string>
 			<key>IOPCIPrimaryMatch</key>
-			<string>0x59128086 0x3e918086 0x3e928086</string>
+			<string>0x3e918086 0x3e928086</string>
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
 			<key>FakeProperties</key>
 			<dict>
 				<key>RM,device-id</key>
-				<data>ElkAAA==</data>
+				<data>kj4AAA==</data>
 			</dict>
 		</dict>
 	</dict>
