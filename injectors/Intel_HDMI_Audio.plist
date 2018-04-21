@@ -108,6 +108,24 @@
 				<data>cKEAAA==</data>
 			</dict>
 		</dict>
+		<key>Intel HDMI Audio - 100-series 0x9d74</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.rehabman.driver.FakePCIID</string>
+			<key>IOClass</key>
+			<string>FakePCIID</string>
+			<key>IOMatchCategory</key>
+			<string>FakePCIID</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x9d748086</string>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>FakeProperties</key>
+			<dict>
+				<key>RM,device-id</key>
+				<data>cKEAAA==</data>
+			</dict>
+		</dict>
 		<key>Intel HDMI Audio - 200-series 0xa2f0</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
@@ -118,6 +136,24 @@
 			<string>FakePCIID</string>
 			<key>IOPCIPrimaryMatch</key>
 			<string>0xa2f08086</string>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>FakeProperties</key>
+			<dict>
+				<key>RM,device-id</key>
+				<data>cKEAAA==</data>
+			</dict>
+		</dict>
+		<key>Intel HDMI Audio - 300-series 0xa348</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.rehabman.driver.FakePCIID</string>
+			<key>IOClass</key>
+			<string>FakePCIID</string>
+			<key>IOMatchCategory</key>
+			<string>FakePCIID</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0xa3488086</string>
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
 			<key>FakeProperties</key>
