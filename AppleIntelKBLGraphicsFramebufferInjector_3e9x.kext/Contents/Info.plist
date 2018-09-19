@@ -199,5 +199,7 @@
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2018 RehabMan, GPL v2, All Rights Reserved.</string>
+	<key>Source Code</key>
+	<string>https://github.com/RehabMan/FakePCIID</string>
 </dict>
 </plist>

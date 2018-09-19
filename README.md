@@ -21,7 +21,13 @@ https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/
 
 In all cases, FakePCIID.kext must be installed with a kext installer (such as Kext Wizard).  The Release build should be used for normal installs.  It has a minimum of output to system.log.  For troubleshooting, the Debug build can be used.
 
-In order to cause the kext to be loaded against a particular device, you must also install the appropriate injector kext.  Currently, four injectors are provided:
+The separate folder 'injectors' in the distribution zip contains two extra codeless kexts:
+
+- AppleIntelKBLGraphicsFramebufferInjector_3e9x.kext: Used for spoofing unsupported CoffeeLake as KabyLake
+
+- BroadcomWiFiInjector.kext: Used to load the native Broadcom WiFi kexts for unsupported devices.  To be used with AirportBrcmFixup.kext as replacement for FakePCIID_Broadcom_WiFi.kext (both will work, but with AirportBrcmFixup.kext, full functionality of FakePCIID.kext is not needed)
+
+In order to cause the kext to be loaded against a particular device, you must also install the appropriate FakePCIID injector kext.  Currently, seven injectors are provided:
 
 - FakePCIID_Intel_HD_Graphics.kext (formerly FakePCIID_HD4600_HD4400.kext): 
 This kext will attach to `8086:0412`, `8086:0416`, `8086:0a1e`, `8086:041e`, `8086:0a16`, `8086:041a`, `8086:016a`, `8086:191d`,  `8086:162a`, `8086:5917`, `8086:3e91`, `8086:3e92`

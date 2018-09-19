@@ -82,8 +82,12 @@ install_usb:
 distribute:
 	if [ -e ./Distribute ]; then rm -r ./Distribute; fi
 	mkdir ./Distribute
+	cp README.md ./Distribute
 	cp -R $(BUILDDIR)/Debug ./Distribute
 	cp -R $(BUILDDIR)/Release ./Distribute
+	mkdir ./Distribute/injectors
+	cp -R AppleIntelKBLGraphicsFramebufferInjector_3e9x.kext ./Distribute/injectors
+	cp -R BroadcomWiFiInjector.kext ./Distribute/injectors
 	find ./Distribute -path *.DS_Store -delete
 	find ./Distribute -path *.dSYM -exec echo rm -r {} \; >/tmp/org.voodoo.rm.dsym.sh
 	chmod +x /tmp/org.voodoo.rm.dsym.sh
