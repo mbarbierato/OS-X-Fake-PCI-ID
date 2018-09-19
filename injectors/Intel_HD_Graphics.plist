@@ -163,7 +163,7 @@
 			<key>IOPCIClassMatch</key>
 			<string>0x03000000&amp;0xff000000</string>
 			<key>IOPCIPrimaryMatch</key>
-			<string>0x3e918086 0x3e928086</string>
+			<string>0x3e918086 0x3e928086 0x3e9b8086</string>
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
 			<key>FakeProperties</key>
