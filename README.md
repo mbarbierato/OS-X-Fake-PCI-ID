@@ -30,7 +30,7 @@ The separate folder 'injectors' in the distribution zip contains two extra codel
 In order to cause the kext to be loaded against a particular device, you must also install the appropriate FakePCIID injector kext.  Currently, seven injectors are provided:
 
 - FakePCIID_Intel_HD_Graphics.kext (formerly FakePCIID_HD4600_HD4400.kext): 
-This kext will attach to `8086:0412`, `8086:0416`, `8086:0a1e`, `8086:041e`, `8086:0a16`, `8086:041a`, `8086:016a`, `8086:191d`,  `8086:162a`, `8086:5917`, `8086:3e91`, `8086:3e92`
+This kext will attach to `8086:0412`, `8086:0416`, `8086:0a1e`, `8086:041e`, `8086:0a16`, `8086:041a`, `8086:016a`, `8086:191d`,  `8086:162a`, `8086:5917`, `8086:3e91`, `8086:3e92`, `8086:1626`, `8086:1616`
 
   - `8086:0412` is HD4600 desktop (now the only GT2 device supported in Yosemite as of 10.10.2)
   - `8086:0a16` is HD4400 mobile.
@@ -41,6 +41,7 @@ This kext will attach to `8086:0412`, `8086:0416`, `8086:0a1e`, `8086:041e`, `80
   - `8086:016a` is P4000 server.
   - `8086:191d` is P530 server.
   - `8086:162a` is P6300 server.
+  - `8086:1616` is HD5500.  Some CPUs (i3-5005U for example), must spoof as 0x1626 to avoid hang at boot
   - `8086:5917` is HD620 KabyLake-R.
   - `8086:3e91` is UHD630 CoffeLake (typical 3e91 with i3 or other low-end CPUs)
   

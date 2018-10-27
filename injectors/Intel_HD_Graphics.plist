@@ -84,6 +84,28 @@
 				<data>EgQAAA==</data>
 			</dict>
 		</dict>
+		<key>HD5500</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.rehabman.driver.FakePCIID</string>
+			<key>IOProbeScore</key>
+			<integer>9001</integer>
+			<key>IOClass</key>
+			<string>FakePCIID</string>
+			<key>IOMatchCategory</key>
+			<string>FakePCIID</string>
+			<key>IOPCIClassMatch</key>
+			<string>0x03000000&amp;0xff000000</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x16268086 0x16168086</string>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>FakeProperties</key>
+			<dict>
+				<key>RM,device-id</key>
+				<data>JhYAAA==</data>
+			</dict>
+		</dict>
 		<key>HD510 HD515 HD520 HD530 P530</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
