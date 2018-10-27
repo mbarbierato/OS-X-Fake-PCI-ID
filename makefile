@@ -4,7 +4,7 @@ KEXT_WIFI=FakePCIID_Broadcom_WiFi.kext
 KEXT_GFX=FakePCIID_Intel_HD_Graphics.kext
 KEXT_USB=FakePCIID_XHCIMux.kext
 DIST=RehabMan-FakePCIID
-BUILDDIR=./Build/Products
+BUILDDIR=./Build
 
 VERSION_ERA=$(shell ./print_version.sh)
 ifeq "$(VERSION_ERA)" "10.10-"
