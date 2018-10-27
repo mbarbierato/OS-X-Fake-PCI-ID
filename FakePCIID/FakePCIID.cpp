@@ -130,8 +130,22 @@ bool FakePCIID::attach(IOService* provider)
     {
         if (OSNumber* num = OSDynamicCast(OSNumber, provider->getProperty("RM,disable_FakePCIID")))
         {
+            // if it is OSNUmber type, must be exactly 1 (other non-zero values are ignored)
             if (1 == num->unsigned32BitValue())
                 return false;
+        }
+        else if (OSData* data = OSDynamicCast(OSData, provider->getProperty("RM,disable_FakePCIID")))
+        {
+            // any 32-bit data (or less) is valid
+            unsigned len = data->getLength();
+            if (len <= sizeof(uint32_t))
+            {
+                uint32_t bytes = 0;
+                memcpy(&bytes, data->getBytesNoCopy(), len);
+                // must be exactly 1 (other non-zero values are ignored)
+                if (1 == bytes)
+                    return false;
+            }
         }
     }
 
