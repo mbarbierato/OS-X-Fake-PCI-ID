@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Source Code</key>
-	<string>https://github.com/RehabMan/FakePCIID</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,11 +15,11 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(MODULE_VERSION)</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>$(MODULE_VERSION)</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>OSBundleCompatibleVersion</key>
 	<string>$(MODULE_VERSION)</string>
 	<key>OSBundleLibraries</key>
@@ -41,5 +39,7 @@
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Root</string>
+	<key>Source Code</key>
+	<string>https://github.com/daliansky/OS-X-Fake-PCI-ID</string>
 </dict>
 </plist>

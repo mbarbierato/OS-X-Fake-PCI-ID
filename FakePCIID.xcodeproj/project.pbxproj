@@ -438,6 +438,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = D4096F761A52FCEC005C037A;
@@ -670,7 +671,7 @@
 				INFOPLIST_FILE = FakePCIID/Info.plist;
 				MODULE_VERSION = 1.3.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
@@ -683,7 +684,7 @@
 				INFOPLIST_FILE = FakePCIID/Info.plist;
 				MODULE_VERSION = 1.3.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
@@ -692,7 +693,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				INFOPLIST_FILE = FakePCIID/Info.plist;
+				MARKETING_VERSION = 1.3.16;
 				MODULE_NAME = org.rehabman.driver.FakePCIID;
 				PRODUCT_NAME = FakePCIID;
 				WRAPPER_EXTENSION = kext;
@@ -703,7 +706,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				INFOPLIST_FILE = FakePCIID/Info.plist;
+				MARKETING_VERSION = 1.3.16;
 				MODULE_NAME = org.rehabman.driver.FakePCIID;
 				PRODUCT_NAME = FakePCIID;
 				WRAPPER_EXTENSION = kext;
@@ -754,9 +759,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = injectors/Intel_HDMI_Audio.plist;
+				MARKETING_VERSION = 1.3.16;
 				MODULE_NAME = "org.rehabman.injector.FakePCIID-Intel-HDMI-Audio";
 				PRODUCT_NAME = FakePCIID_Intel_HDMI_Audio;
 			};
@@ -766,8 +773,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = injectors/Intel_HDMI_Audio.plist;
+				MARKETING_VERSION = 1.3.16;
 				MODULE_NAME = "org.rehabman.injector.FakePCIID-Intel-HDMI-Audio";
 				PRODUCT_NAME = FakePCIID_Intel_HDMI_Audio;
 			};
